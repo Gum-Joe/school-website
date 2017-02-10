@@ -7,7 +7,7 @@
     <body>
         <div class="sidebar grey white-text">
             <ul>
-                <a href="index.html" id="sidebar-head"><li>NAVIGATION</li></a>
+                <a href="#" id="sidebar-head"><li>Back</li></a>
                 <a class="active" href="index.html"><li>Home</li></a>
                 <a href="programming"><li>Programming</li></a>
                 <a href="youtube"><li>Youtube</li></a>
@@ -44,10 +44,50 @@
 		  </div>
 		</div>
         <!-- Load Babel for ES6-->
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
         <!-- Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!-- Custom stuff -->
+        <script charset="utf-8" type="text/babel">
+        // ES6
+        // Vars
+        const SIDEBAR_IN_PROPS = {
+          sidebar: {
+            marginLeft: 0
+          },
+          body: {
+            opacity: 0.5
+          }
+        };
+
+        const SIDEBAR_OUT_PROPS = {
+          sidebar: {
+            marginLeft: "-150px"
+          },
+          body: {
+            opacity: 1
+          }
+        };
+
+        /**
+         * Animate sidebar
+         * Using jquery
+         * Generally, I would use css classes and a css animation to open the sidebar
+         * With JQuery attaching the classes
+         * But I am doing it this way so I have JS in my page
+         */
+        $(".hamburger").click(() => {
+          $(".sidebar").animate(SIDEBAR_IN_PROPS.sidebar, 500);
+          $(".main").animate(SIDEBAR_IN_PROPS.body, 500);
+        });
+
+        $("#sidebar-head").click(() => {
+          $(".sidebar").animate(SIDEBAR_OUT_PROPS.sidebar, 500);
+          $(".main").animate(SIDEBAR_OUT_PROPS.body, 500);
+        });
+
+        </script>
     </body>
 </html>
