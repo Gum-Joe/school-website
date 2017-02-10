@@ -20,6 +20,44 @@ body {
 		opacity: 0.75;
 }
 
+/* Fix an issue where elements were covering hamburger button */
+#header h1, h4 {
+	width: calc(100% - 300px);
+	margin-left: 100px;
+	margin-right: 200px;
+}
+
+#header img {
+	border-radius: 100px;
+	float: right;
+	height: 100px;
+	width: 100px;
+	margin-right: 10px;
+	margin-top: -99.9px; /* Push image upwards */
+}
+
+.hamburger {
+	width: 100px;
+	height: 100px;
+	background-color: #212121;
+	margin-top: -95px;
+	border-radius: 100px;
+	text-align: center;
+	padding-left: 24px;
+	float: left;
+}
+
+.hamburger:hover {
+	background-color: #424242;
+}
+
+.hamburger div {
+	width: 50px;
+	height: 2px;
+	background-color: white;
+	margin: 10px 0;
+}
+
 .sidebar {
     width: 150px;
     height: 100%;
@@ -53,6 +91,29 @@ body {
     background-color: #34495e;
 }
 
-.content-home{
+.content-home {
     padding: 10px;
+}
+
+.hobby-list {
+	width: 100%;
+	padding: 0;
+}
+
+.cards {
+	padding: 10px 10px 10px 0;
+	list-style: none;
+}
+
+.card {
+	padding: 11px;
+	margin-bottom: 10px;
+	height: 50px;
+	/* From w3 schools webiste */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+	color: black;
+}
+.card:hover {
+	/* From w3 schools webiste */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
