@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Bootstrap -->
@@ -25,7 +26,7 @@
              <div></div>
              <div></div>
            </button>
-           <img src="https://www.gravatar.com/avatar/ab53f96b3d6d717bd49c95161f618de3" alt="Gum Joe Avatar">
+           <img src="https://www.gravatar.com/avatar/ab53f96b3d6d717bd49c95161f618de3?s=100" alt="Gum Joe Avatar">
            <img src="me.jpg" alt="A pic of me">
 		  </div>
 		  <div class="content-home">
@@ -50,44 +51,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <!-- Custom stuff -->
-        <script charset="utf-8" type="text/babel">
-        // ES6
-        // Vars
-        const SIDEBAR_IN_PROPS = {
-          sidebar: {
-            marginLeft: 0
-          },
-          body: {
-            opacity: 0.5
-          }
-        };
-
-        const SIDEBAR_OUT_PROPS = {
-          sidebar: {
-            marginLeft: "-150px"
-          },
-          body: {
-            opacity: 1
-          }
-        };
-
-        /**
-         * Animate sidebar
-         * Using jquery
-         * Generally, I would use css classes and a css animation to open the sidebar
-         * With JQuery attaching the classes
-         * But I am doing it this way so I have JS in my page
-         */
-        $(".hamburger").click(() => {
-          $(".sidebar").animate(SIDEBAR_IN_PROPS.sidebar, 500);
-          $(".main").animate(SIDEBAR_IN_PROPS.body, 500);
-        });
-
-        $("#sidebar-head").click(() => {
-          $(".sidebar").animate(SIDEBAR_OUT_PROPS.sidebar, 500);
-          $(".main").animate(SIDEBAR_OUT_PROPS.body, 500);
-        });
-
-        </script>
+        <script type="text/babel" src="index.js"></script>
     </body>
 </html>
