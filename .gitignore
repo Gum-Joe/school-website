@@ -1,3 +1,5 @@
+# This is a file which tells my version control system to ignore files that are either not needed or very big and shouldn't be uploaded to the repo.
+
 # Logs
 logs
 *.log

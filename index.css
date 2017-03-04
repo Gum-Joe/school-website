@@ -7,10 +7,6 @@ body {
 	height: 100%; /* For some reasons the body doesn't cover all the space */
 }
 
-html {
-    height: 100%; /* For some reasons the html doesn't cover all the space */
-}
-
 .main {
 	height: 100%;
 	width: 100%;
@@ -67,10 +63,10 @@ html {
 
 .sidebar {
     width: 150px;
-    height: 100%;
+    height: 110%; /* For some reason 100% dosn't work here */
     position: absolute;
 		margin-left: -150px; /* Push of page */
-		z-index: 2; /* Render after body, so sidebar can overlap */
+		z-index: 2; /* Render after main, so sidebar can overlap */
 }
 
 .sidebar ul {
@@ -118,38 +114,151 @@ html {
 	padding: 11px;
 	margin-bottom: 10px;
 	height: 50px;
+	color: black;
+	text-decoration: none;
 	/* From w3 schools webiste */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
-	color: black;
 }
 .card:hover {
 	/* From w3 schools webiste */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.main .content-home .programming .card {
-        height: auto !important;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 30px;
+/* Remove the shadow from a card and instead darken the color */
+.card-no-shadow, .card-no-shadow:hover {
+	box-shadow: none;
 }
 
-.main .content-home .programming .card img {
-        height: 150px;
-        width: 150px;
-        border-radius: 100px;
+.card-no-shadow:hover {
+	background-color: #fafafa;
 }
 
-.programming .card h3 {
-    padding-left: 20px;
+.main .content-home .programming .github-card {
+	height: auto !important;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+
+.main .content-home .programming .github-card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.programming .github-card h3 {
+  padding-left: 20px;
 }
 
 .programming .card:hover {
-    color: black;
-    text-decoration: none;
+  color: black;
 }
 
-.programming .card .programming-fact {
-    width: 70px;
-    text-align: center;
+.programming .github-card ul {
+  list-style-type: none;
+	display: inline;
+	padding: 0;
+	margin-left: 25%;
+	width: 50%;
+}
+
+.programming .github-card .programming-fact {
+  width: 150px;
+  text-align: center;
+	padding-bottom: 70px;
+	margin-top: -150px;
+}
+
+.programming .github-card ul li {
+	width: 33%;
+	margin-top: -152px;
+}
+
+.programming .github-card ul #stars {
+	margin-left: 28%;
+}
+
+.programming .github-card ul #followers {
+	margin-left: 66%;
+}
+
+.programming .github-card a {
+	margin-left: 41%;
+	margin-top: -45px;
+}
+
+.programming-projects {
+	padding: 0;
+}
+
+.programming-projects .card {
+	margin: 0 5px 5px 5px !important;
+	width: calc((100% - 39px) / 3) !important;
+	display: inline-block !important;
+	height: 150px !important;
+	text-decoration: none;
+}
+
+.programming-projects .card h6 {
+	color: #2980b9;
+}
+
+.programming-projects .card:hover h6 {
+	text-decoration: underline;
+}
+
+.programming-projects #block-breaker {
+	top: 24px;
+}
+
+.programming-projects #sch-website {
+	bottom: 24px;
+}
+
+.programming-projects #mssk {
+	top: 24px;
+}
+
+.programming-projects .card div {
+	margin-top: -12px;
+}
+
+.programming-projects .card div .lang-circle {
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+}
+
+.programming-projects .card div p {
+	font-size: 0.8em;
+	opacity: 0.75;
+}
+
+.programming-projects .card div .lang-circle, .programming-projects .card div p {
+	display: inline-block;
+}
+
+.youtube .cards .card {
+	display: inline-block;
+	margin-right: 5px;
+	width: 300px;
+	height: 177.5px;
+	padding: 10px;
+}
+
+.youtube .cards .card iframe {
+	width: 280px;
+}
+
+.cricket img {
+	transform: rotate(90deg);
+	margin-top: 80px;
+	margin-left: -80px
+}
+
+.lego img {
+	height: 190px;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 }

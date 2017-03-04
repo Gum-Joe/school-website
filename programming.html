@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="index.css">
 	</head>
-    <body>
-        <div class="sidebar grey white-text">
-            <ul>
-                <a href="#" id="sidebar-head"><li>Back</li></a>
-                <a class="active" href="index.html"><li>Home</li></a>
-                <a href="programming.html"><li>Programming</li></a>
-                <a href="youtube.html"><li>Youtube</li></a>
-                <a href="cricket.html"><li>Cricket</li></a>
-                <a href="politics.html"><li>Politics</li></a>
-            </ul>
-        </div>
-        
+  <body>
+      <div class="sidebar grey white-text">
+          <ul>
+              <a href="#" id="sidebar-head"><li>Back</li></a>
+              <a href="index.html"><li>Home</li></a>
+              <a class="active" href="programming.html"><li>Programming</li></a>
+              <a href="youtube.html"><li>Youtube</li></a>
+              <a href="cricket.html"><li>Cricket</li></a>
+              <a href="lego.html"><li>Lego</li></a>
+          </ul>
+      </div>
+
 		<div class="main">
 		  <div id="header" class="red white-text">
 			     <h1>All about me</h1>
@@ -33,40 +33,104 @@
 		  <div class="content-home">
 		      <h5>Programming</h5>
 		      <div class="programming">
-		          One of my hobbies is <strong>programming</strong>.  When I am free, I enjoy programming as I find it fun.  I code in variety of languages, but my main ones are:
+		          One of my hobbies is <strong>programming</strong>, which I have been doing since the Easter Holidays of Year 6, with my first Project being the "Minecraft Server Starter Kit".  When I am free, I enjoy programming as I find it fun.  At the moment, my main project is called "bedel".  I code in variety of languages, but my main ones are:
 		          <ul>
 		              <li>Javascript</li>
-		              <li>Css</li>
+		              <li>CSS</li>
 		              <li>HTMl (not a programming language, but a markup language)</li>
 		              <li>Shell</li>
 		          </ul>
 		          I am also on GitHub, under the name "Gum-Joe":
-		          <a class="card darker-white" href="https://github.com/Gum-Joe">
-                    <img src="https://www.gravatar.com/avatar/ab53f96b3d6d717bd49c95161f618de3?s=150" alt="Gum Joe Avatar">
+		          <div class="card github-card darker-white">
+                <img src="https://www.gravatar.com/avatar/ab53f96b3d6d717bd49c95161f618de3?s=150" alt="Gum Joe Avatar">
 		            <h3>Gum-Joe</h3>
-		            <div id="repos" class="programming-fact">
-		              <h1>58</h1>
-		              <h5>REPOS</h5>
-		            </div>
-		          </a>
+                <ul>
+                  <li id="repos">
+                    <div class="programming-fact">
+    		              <h1>58</h1>
+    		              <h5>REPOS</h5>
+    		            </div>
+                  </li>
+                  <li id="stars">
+                    <div class="programming-fact">
+    		              <h1>170</h1>
+    		              <h5>STARS</h5>
+    		            </div>
+                  </li>
+                  <li id="followers">
+                    <div class="programming-fact">
+    		              <h1>6</h1>
+    		              <h5>FOLLOWERS</h5>
+    		            </div>
+                  </li>
+                </ul>
+                <a href="https://github.com/Gum-Joe" target="_blank"><h6>View on GitHub >></h6></a>
+		          </div>
+              <h5>Some of my programming projects:</h5>
+              <!--
+                The layout and UI below was inspired by GitHub's project view on the profile page
+                NOTE: The positioning may look all messed up, however I do not know how to fix this for all screens and they should look neatly next to each other and inline
+              -->
+              <div class="cards programming-projects">
+                <a class="card card-no-shadow" href="https://github.com/Gum-Joe/bedel" target="_blank">
+                  <h6><strong>bedel</strong></h6>
+                  <p>Build, ship and manage apps, all from one dashboard. This is bedel.</p>
+                  <div>
+                    <div class="lang-circle yellow"></div>
+                    <p>Javascript<p>
+                  </div>
+                </a>
+                <a class="card card-no-shadow" href="https://github.com/supercandy/block-breaker" target="_blank" id="block-breaker">
+                  <h6>supercandy/<strong>block-breaker</strong></h6>
+                  <p>A react native game where you break bricks and collect pineapples by tilting your device to move a little ball</p>
+                  <div>
+                    <div class="lang-circle yellow"></div>
+                    <p>JavaScript<p>
+                  </div>
+                </a>
+                <a class="card card-no-shadow" href="https://github.com/Gum-Joe/one-dark-material-syntax" target="_blank">
+                  <h6><strong>one-dark-material-syntax</strong></h6>
+                  <p>A fork of atom's 'One dark syntax theme', but using a material colour pallet.</p>
+                  <div>
+                    <div class="lang-circle purple"></div>
+                    <p>CSS<p>
+                  </div>
+                </a>
+              </div>
+              <div class="cards programming-projects">
+                <a class="card card-no-shadow" href="https://github.com/Gum-Joe/retis" target="_blank">
+                  <h6><strong>retis</strong></h6>
+                  <p>The advanced build service for everyone - including dudes!</p>
+                  <div>
+                    <div class="lang-circle navy"></div>
+                    <p>CoffeeScript<p>
+                  </div>
+                </a>
+                <a class="card card-no-shadow" href="https://github.com/Gum-Joe/school-website" target="_blank" id="sch-website">
+                  <h6><strong>school-website</strong></h6>
+                  <p>A website about my hobbies and interests</p>
+                  <div>
+                    <div class="lang-circle red"></div>
+                    <p>HTML<p>
+                  </div>
+                </a>
+                <a class="card card-no-shadow" href="https://github.com/Gum-Joe/MinecraftServerStarterKit" target="_blank" id="mssk">
+                  <h6><strong>MinecraftServerStarterKit</strong></h6>
+                  <p>My very first programming project, to make starting a Spigot Minecraft Server a one-click operation</p>
+                  <div>
+                    <div class="lang-circle green"></div>
+                    <p>Shell (Bash)<p>
+                  </div>
+                </a>
+              </div>
 		      </div>
-          <div class="hobby-list">
-            <ul class="cards">
-              <a class="card darker-white" href="programming.html"><li>Programming</li></a>
-              <a class="card darker-white" href="youtube.html"><li>Youtube Channel</li></a>
-              <a class="card darker-white" href="cricket.html"><li>Cricket</li></a>
-              <a class="card darker-white" href="politics.html"><li>Politics</li></a>
-            </ul>
-          </div>
 		  </div>
 		</div>
-        <!-- Load Babel for ES6-->
-        <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
         <!-- Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <!-- Custom stuff -->
-        <script type="text/babel" src="index.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

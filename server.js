@@ -1,4 +1,5 @@
 /* eslint-env node */
+// Thi script starts a NodeJS server for when I am using a cloud IDE.  It is not included in any website pages
 const http = require("http");
 const fs = require("fs");
 const server = http.createServer((request, response) => {
