@@ -1,4 +1,5 @@
 // I would ES6 here, but my transpiler won't allow local files to be used
+
 // Vars
 var SIDEBAR_IN_PROPS = {
     sidebar: {

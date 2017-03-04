@@ -1,6 +1,7 @@
-@CHARSET "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "./colors.css";
+
+/* General styling (theme) */
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #212121; /* For sidebar animation dimming */
@@ -100,16 +101,19 @@ body {
     padding: 10px;
 }
 
+/* Home page */
 .hobby-list {
 	width: 100%;
 	padding: 0;
 }
 
+/* Main styling for cards groups */
 .cards {
 	padding: 10px 10px 10px 0;
 	list-style: none;
 }
 
+/* Main styling for a card */
 .card {
 	padding: 11px;
 	margin-bottom: 10px;
@@ -124,7 +128,7 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Remove the shadow from a card and instead darken the color */
+/* Remove the shadow from a card and instead darken the color on hover */
 .card-no-shadow, .card-no-shadow:hover {
 	box-shadow: none;
 }
@@ -133,6 +137,7 @@ body {
 	background-color: #fafafa;
 }
 
+/* Programming page styles */
 .main .content-home .programming .github-card {
 	height: auto !important;
   width: 50%;
@@ -238,6 +243,7 @@ body {
 	display: inline-block;
 }
 
+/* YouTube page styling */
 .youtube .cards .card {
 	display: inline-block;
 	margin-right: 5px;
@@ -250,12 +256,14 @@ body {
 	width: 280px;
 }
 
+/* Cricket page styling */
 .cricket img {
 	transform: rotate(90deg);
 	margin-top: 80px;
 	margin-left: -80px
 }
 
+/* Lego page styling */
 .lego img {
 	height: 190px;
 	border-radius: 5px;
